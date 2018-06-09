@@ -33,8 +33,7 @@ server:
             {
                 var downloadURL="{{site.github.releases_url}}/download/"+releases[0].tag_name;
 
-                document.getElementById("Windows").href=downloadURL+"/couch-potato-server.msi";
-                document.getElementById("Windows").text=document.getElementsByClassName("Windows").length;
+                document.getElementsByClassName("Windows")[0].href=downloadURL+"/couch-potato-server.msi";
 
                 for (var windowsLink in document.getElementsByClassName("Windows"))
                 {
