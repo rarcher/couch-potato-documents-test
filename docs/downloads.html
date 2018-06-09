@@ -33,20 +33,22 @@ server:
             {
                 var downloadURL="{{site.github.releases_url}}/download/"+releases[0].tag_name;
 
-                for (var windowsLink in document.getElementsByClassName("Windows"))
+                var windowsLinks=document.getElementsByClassName("Windows");
+                for (var loop=0; loop<windowsLinks.length; loop++)
                 {
-                    document.write("Windows link is: "+windowsLink);
-                    windowsLink.href=downloadURL+"/couch-potato-server.msi";
+                    windowsLinks[loop].href=downloadURL+"/couch-potato-server.msi";
                 }
 
-                for (var linuxLink in document.getElementsByClassName("Linux"))
+                var linuxLinks=document.getElementsByClassName("Linux");
+                for (var loop=0; loop<linuxLinks.length; loop++)
                 {
-                    linuxLink.href=downloadURL+"/couch-potato-server.deb";
+                    linuxLinks[loop].href=downloadURL+"/couch-potato-server.deb";
                 }
 
-                for (var noInstallLink in document.getElementsByClassName("No-Install"))
+                var noInstallLinks=document.getElementsByClassName("No-Install");
+                for (var loop=0; loop<noInstallLinks.length; loop++)
                 {
-                    noInstallLink.href=downloadURL+"/couch-potato-server.zip";
+                    noInstallLinks[loop].href=downloadURL+"/couch-potato-server.zip";
                 }
             });
 </script>
