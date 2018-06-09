@@ -34,9 +34,9 @@ server:
                 var downloadURL="{{site.github.releases_url}}/download/"+releases[0].tag_name;
 
                 var elements=document.getElementsByClassName("Windows");
+                document.write("There are "+elements.length+" elements in the returned array.");
                 for (var windowsLink in elements)
                 {
-                    document.write("I was called.");
                     windowsLink.href=downloadURL+"/couch-potato-server.msi";
                 }
 
