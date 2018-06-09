@@ -1,52 +1,40 @@
 ---
 layout: default
 ---
-<h2>
-    Windows
-</h2>
+<p>
+There are installers available for Linux and Windows:
+</p>
 <ul>
     <li>
-        <a id="Windows">Click here</a> to download.
+        <a id="Windows">Windows</a>
     </li>
     <li>
-        <a href="https://java.com/en/">Java</a> must be installed separately.
+        <a id="Linux">Debian/Ubuntu</a>
     </li>
 </ul>
-<h2>
-    Debian/Ubuntu Linux
-</h2>
+<p>
+Both installers will configure the server to start automatically when your computer boots. There is also a separate zip
+package that makes no changes to your system configuration, and will not automatically boot the server:
+</p>
 <ul>
     <li>
-        <a id="Linux">Click here</a> to download.
+        <a id="No-Install">Non-Installation</a>
     </li>
 </ul>
-<h2>
-    No-Install
-</h2>
+<p>
+This version works on any operating system, so long as <a href="https://java.com/en/">Java</a> is installed. To run it,
+extract the package contents and double-click on <code>Server.jar</code>. If any firewall notices appear, click
+<code>Allow</code>.
+</p>
+<h3>
+    Troubleshooting
+</h3>
 <ul>
     <li>
-        <a id="No-Install">Click here</a> to download.
-    </li>
-    <li>
-        Works on any operating system.
-    </li>
-    <li>
-        Does not alter your system configuration in any way.
-    </li>
-    <li>
-        Does not start automatically when your computer boots.
-    </li>
-    <li>
-        <a href="https://java.com/en/">Java</a> must be installed separately.
-    </li>
-    <li>
-        Start the server process by extracting the package contents and double-clicking on <code>Server.jar</code> in
-        the <code>bin</code> folder. If any firewall notices appear, click <code>Allow</code>.
-    </li>
-    <li>
-        If the mouse cursor disappears while using this version on Ubuntu, try using the Debian package instead. It
-        contains a script that fixes the problem during installation. Alternatively, you can fix it yourself using the
-        method described in <a href="{{site.github.issues_url}}/12">this thread</a>.
+        If you experience the mouse cursor disappearing while using the non-installation version on Ubuntu, consider
+        switching to the installer package. It contains a script that fixes the problem during installation.
+        Alternatively, you can fix it yourself using the method described in
+        <a href="{{site.github.issues_url}}/12">this thread</a>.
     </li>
 </ul>
 <script src="{{site.github.url}}/jquery-3.1.1.min.js"></script>
