@@ -28,10 +28,10 @@ There are installation packages available for Linux and Windows:
 </p>
 <ul>
     <li>
-        <a id="Windows">Windows</a>
+        <a class="Windows">Windows</a>
     </li>
     <li>
-        <a id="Linux">Debian/Ubuntu</a>
+        <a class="Linux">Debian/Ubuntu</a>
     </li>
 </ul>
 <p>
@@ -50,8 +50,19 @@ server:
             {
                 var downloadURL="{{site.github.releases_url}}/download/"+releases[0].tag_name;
 
-                document.getElementById("Windows").href=downloadURL+"/couch-potato-server.msi";
-                document.getElementById("Linux").href=downloadURL+"/couch-potato-server.deb";
-                document.getElementById("No-Install").href=downloadURL+"/couch-potato-server.zip";
+                for (var windowsLink in document.getElementsByClassName("Windows"))
+                {
+                    windowsLink.href=downloadURL+"/couch-potato-server.msi";
+                }
+
+                for (var linuxLink in document.getElementsByClassName("Linux"))
+                {
+                    linuxLink.href=downloadURL+"/couch-potato-server.deb";
+                }
+
+                for (var noInstallLink in document.getElementsByClassName("No-Install"))
+                {
+                    noInstallLink.href=downloadURL+"/couch-potato-server.zip";
+                }
             });
 </script>
