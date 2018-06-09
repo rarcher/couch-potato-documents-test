@@ -4,7 +4,8 @@ description: >
     [Couch Potato](https://play.google.com/store/apps/details?id=codes.soloware.couchpotato.free) Android app. Runs as a
     daemon, and converts client commands into mouse and keyboard events on the local system.
 
-name: Ryan Archer
+author: Ryan Archer
 github_username: rarcher
+email: ryan@soloware.codes
 
 theme: minima
