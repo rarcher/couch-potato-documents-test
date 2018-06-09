@@ -1,4 +1,10 @@
-theme: minima
+title: Couch Potato Server
+description: >
+    Server application for the
+    [Couch Potato](https://play.google.com/store/apps/details?id=codes.soloware.couchpotato.free) Android app. Runs as a
+    daemon, and converts client commands into mouse and keyboard events on the local system.
 
-title: Downloads
-description: Please select a server version for download.
+name: Ryan Archer
+github_username: rarcher
+
+theme: minima
