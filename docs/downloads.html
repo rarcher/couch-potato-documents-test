@@ -11,7 +11,7 @@ There are installation packages available for Linux and Windows:
 </p>
 <ul>
     <li>
-        <a class="Windows">Windows</a>
+        <a id="Windows" class="Windows">Windows</a>
     </li>
     <li>
         <a class="Linux">Debian/Ubuntu</a>
@@ -32,6 +32,8 @@ server:
             function(releases)
             {
                 var downloadURL="{{site.github.releases_url}}/download/"+releases[0].tag_name;
+
+                document.getElementById("Windows").href=downloadURL+"/couch-potato-server.msi";
 
                 for (var windowsLink in document.getElementsByClassName("Windows"))
                 {
